@@ -86,10 +86,13 @@ mount -t proc none /proc
 mount -t sysfs none /sys
 mount -t devtmpfs devtmpfs /dev
 dmesg -n 1
+clear
 echo "------------------------------"
-echo "  Welcome to Mini Linux!   "
+echo "  Welcome to PotatoOS!   "
 echo "------------------------------"
-exec setsid cttyhack sh
+while true; do
+    setsid cttyhack sh
+done
 ```
 ОБЯЗАТЕЛЬНО сделай файл исполняемым: `chmod +x ./rootfs/init`
 
