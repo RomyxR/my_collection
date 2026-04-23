@@ -23,7 +23,7 @@ sudo apt install build-essential libncurses-dev flex bison bc libelf-dev libssl-
 ### 1.2 Загрузка всех исходников
 Создаем папку и скачиваем ядро, BusyBox и загрузчик:
 ```bash
-mkdir ~/myos_project && cd ~/myos_project
+mkdir ~/myos_project
 
 # Скачиваем Ядро Linux
 wget https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.0.tar.xz
