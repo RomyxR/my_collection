@@ -47,7 +47,7 @@ tar -xf syslinux-6.03.tar.xz
 2.  **Настраиваем:** `make defconfig` (стандартные настройки).
 3.  **Строим:** `make -j$(nproc)`
 4.  **Забираем результат:**
-    `cp ./linux-7.0/arch/x86/boot/bzImage ~/myos_project/vmlinuz`
+    `cp ~/linux-7.0/arch/x86/boot/bzImage ~/myos_project/vmlinuz`
     `cd ~/myos_project`
 
 ---
