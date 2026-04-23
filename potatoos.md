@@ -34,10 +34,10 @@ wget https://busybox.net/downloads/busybox-1.37.0.tar.bz2
 # Скачиваем Загрузчик Syslinux
 wget https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz
 
-# Распаковываем всё сразу
-tar -xf linux-7.0.tar.xz
-tar -xf busybox-1.37.0.tar.bz2
-tar -xf syslinux-6.03.tar.xz
+# Распаковываем всё сразу и удаляем архивы 
+tar -xf linux-7.0.tar.xz && rm linux-7.0.tar.xz
+tar -xf busybox-1.37.0.tar.bz2 && rm busybox-1.37.0.tar.bz2
+tar -xf syslinux-6.03.tar.xz && rm syslinux-6.03.tar.xz
 ```
 ---
 
