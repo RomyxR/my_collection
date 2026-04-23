@@ -72,7 +72,7 @@ tar -xf syslinux-6.03.tar.xz
 ```bash
 cd ~/myos_project
 mkdir -p ./rootfs/{dev,proc,sys,etc}
-cp -a busybox-1.37.0/_install/* ./rootfs/
+cp -a ~/busybox-1.37.0/_install/* ./rootfs/
 ```
 
 Создадим сценарий запуска — файл `init`:
