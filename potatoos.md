@@ -46,7 +46,6 @@ tar -xf syslinux-6.03.tar.xz
 1.  **Заходим в папку ядра:** `cd linux-7.0`
 2.  **Настраиваем:** `make defconfig` (стандартные настройки).
 3.  **Строим:** `make -j$(nproc)`
-    *Это может занять 10–20 минут.*
 4.  **Забираем результат:**
     `cp ./linux-7.0/arch/x86/boot/bzImage ~/myos_project/vmlinuz`
     `cd ~/myos_project`
