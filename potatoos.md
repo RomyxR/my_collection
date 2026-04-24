@@ -128,8 +128,8 @@ done
 
 Запаковываем нашу систему в архив (Initramfs):
 ```bash
-cd ~/myos_project/rootfs
-find | cpio -oH newc | gzip > ../iso_root/boot/initrd.img
+cd ~/myos_project/
+cd rootfs && find | cpio -oH newc | gzip > ../iso_root/boot/initrd.img && cd ..
 ```
 
 Создаем сам образ диска:
